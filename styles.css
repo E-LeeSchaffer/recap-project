@@ -96,3 +96,16 @@ h1 {
   margin: auto;
   padding: 20px 30px 0px 20px;
 }
+
+.nav-icon {
+  height: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 20px;
+  border-top: 5px solid #b1c5c3;
+  padding-top: 20px;
+}
