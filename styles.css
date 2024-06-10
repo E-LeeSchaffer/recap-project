@@ -12,13 +12,6 @@ h1 {
   padding: 10px;
 }
 
-.questionBox {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 30px;
-}
-
 .img-bookmark-white {
   height: 40px;
   position: absolute;
@@ -26,7 +19,7 @@ h1 {
   right: 45px;
 }
 
-.questionCard {
+.question-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -58,9 +51,7 @@ h1 {
   text-align: left;
 }
 
-.tag1,
-.tag2,
-.tag3 {
+.tag {
   border: 1px solid gray;
   border-radius: 5px;
   text-decoration: none;
@@ -69,7 +60,7 @@ h1 {
   padding: 2px 4px;
 }
 
-.answerBox {
+.answer-box {
   display: flex;
   justify-content: center;
   position: relative;
@@ -82,7 +73,7 @@ h1 {
   right: 45px;
 }
 
-.answerCard {
+.answer-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
