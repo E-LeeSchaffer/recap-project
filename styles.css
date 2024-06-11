@@ -1,7 +1,15 @@
 body {
   font-family: "Bebas Neue", sans-serif;
+  width: 100%;
+  margin: auto;
+}
+
+main {
+  font-family: "Bebas Neue", sans-serif;
   margin: auto;
   font-size: 1.3rem;
+  width: 320px;
+  height: 667px;
 }
 
 h1 {
@@ -15,16 +23,16 @@ h1 {
 .img-bookmark-white {
   height: 40px;
   position: absolute;
-  top: 95px;
-  right: 30px;
+  top: -15px;
+  right: 15px;
   z-index: 1;
 }
 
 .img-bookmark-black {
   height: 40px;
   position: absolute;
-  top: 295px;
-  right: 30px;
+  top: -15px;
+  right: 15px;
   z-index: 1;
 }
 
