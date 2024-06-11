@@ -1,27 +1,39 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Bebas Neue", sans-serif;
-  width: 100%;
-  margin: auto;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 main {
   font-family: "Bebas Neue", sans-serif;
-  margin: auto;
+  padding-inline: 20px;
+  padding-bottom: 50px;
   font-size: 1.3rem;
-  width: 320px;
-  height: 667px;
+  height: 100vh;
+  padding-top: 120px;
 }
 
-h1 {
+header {
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.3rem;
   background-color: #b1c5c3;
-  margin-top: 0;
-  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .img-bookmark-white {
-  height: 40px;
+  height: 36px;
   position: absolute;
   top: -15px;
   right: 15px;
@@ -29,39 +41,54 @@ h1 {
 }
 
 .img-bookmark-black {
-  height: 40px;
+  height: 36px;
   position: absolute;
   top: -15px;
   right: 15px;
   z-index: 1;
 }
 
-.question-card {
+.card {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  gap: 24px;
+}
+
+.card__box {
   display: flex;
   flex-direction: column;
   position: relative;
-  text-align: center;
-  align-items: left;
   border: 1px solid black;
   border-radius: 10px;
-  margin-bottom: 20px;
-  padding: 20px 30px 0px 20px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 24px;
+  align-items: center;
+  text-align: center;
 }
 
 .button {
   border: 1px solid black;
   padding: 5px;
-  width: 30vw;
+  width: 24vw;
   border-radius: 10px;
   background-color: #b1c5c3;
-  margin: auto;
 }
 
-.tags {
-  text-decoration: none;
+.card__tags {
   font-size: 0.8rem;
-  padding: 25px 0;
+  gap: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
   text-align: left;
+  margin: 0;
+  padding: 20px 0;
 }
 
 .tag {
@@ -77,12 +104,19 @@ h1 {
   height: 30px;
 }
 
-.nav {
+.navigation {
+  padding-block: 40px 12px;
+  position: fixed;
+  bottom: -12px;
+  width: 100%;
+  z-index: 2;
+}
+
+.navigation__list {
   display: flex;
   justify-content: space-around;
-  position: fixed;
-  bottom: 20px;
-  border-top: 5px solid #b1c5c3;
-  padding-block: 20px 0px;
+  background-color: #b1c5c3;
   width: 100%;
+  margin: 0;
+  padding: 12px;
 }

@@ -12,49 +12,80 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
+    <header class="header">
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="question-card">
-        <img
-          class="img-bookmark-white"
-          src="bookmark-white.svg"
-          alt="bookmark"
-        />
-        <p>What property flips the axes in flexbox?</p>
-        <button class="button">Show Answer</button>
-        <div class="tags">
-          <a class="tag" href="index.html">#html</a>
-          <a class="tag" href="flexbox.html">#flexbox</a>
-          <a class="tag" href="styles.css">#css</a>
-        </div>
-      </section>
-      <section class="question-card">
-        <img
-          class="img-bookmark-black"
-          src="bookmark-black.jpg"
-          alt="bookmark"
-        />
-        <p>What property flips the axes in flexbox?</p>
-        <button class="button">Show Answer</button>
-        <div class="tags">
-          <a class="tag" href="index.html">#html</a>
-          <a class="tag" href="flexbox.html">#flexbox</a>
-          <a class="tag" href="styles.css">#css</a>
-        </div>
-      </section>
+      <ul class="card" role="list">
+        <li class="card__box">
+          <article class="card__content">
+            <img
+              class="img-bookmark-white"
+              src="bookmark-white.svg"
+              alt="bookmark"
+            />
+            <p>What property flips the axes in flexbox?</p>
+            <button class="button">Show Answer</button>
+            <ul class="card__tags" role="list">
+              <li class="tag">#html</li>
+              <li class="tag">#flexbox</li>
+              <li class="tag">#css</li>
+            </ul>
+          </article>
+        </li>
+        <li class="card__box">
+          <article class="card__content">
+            <img
+              class="img-bookmark-white"
+              src="bookmark-black.jpg"
+              alt="bookmark"
+            />
+            <p>What property flips the axes in flexbox?</p>
+            <button class="button">Show Answer</button>
+            <ul class="card__tags" role="list">
+                <li class="tag">#html</li>
+                <li class="tag">#flexbox</li>
+                <li class="tag">#css</li>
+              </ul>
+          </article>
+        </li>
+        <li class="card__box">
+            <article class="card__content">
+              <img
+                class="img-bookmark-white"
+                src="bookmark-white.svg"
+                alt="bookmark"
+              />
+              <p>What property flips the axes in flexbox?</p>
+              <button class="button">Show Answer</button>
+              <ul class="card__tags" role="list">
+                  <li class="tag">#html</li>
+                  <li class="tag">#flexbox</li>
+                  <li class="tag">#css</li>
+                </ul>
+            </article>
+          </li>
+      </ul>
     </main>
     <footer>
-      <nav class="nav">
-        <a href="#home"><img class="nav-icon" src="home.svg" alt="home" /></a>
-        <a href="#bookmark"
-          ><img class="nav-icon" src="bookmark.svg" alt="bookmark"
-        /></a>
-        <a href="#user">
-          <img class="nav-icon" src="benutzer.svg" alt="user"
-        /></a>
+      <nav class="navigation">
+        <ul class="navigation__list" role="list">
+          <li>
+            <a href="#home"
+              ><img class="nav-icon" src="home.svg" alt="home"
+            /></a>
+          </li>
+          <li>
+            <a href="#bookmark"
+              ><img class="nav-icon" src="bookmark.svg" alt="bookmark"
+            /></a>
+          </li>
+          <li>
+            <a href="#user">
+              <img class="nav-icon" src="benutzer.svg" alt="user"
+            /></a>
+          </li>
+        </ul>
       </nav>
     </footer>
   </body>
