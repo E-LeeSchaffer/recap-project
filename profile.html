@@ -11,19 +11,49 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <script src="./profile.js" defer></script>
   </head>
   <body>
     <header class="header">
       <h1>Quiz App</h1>
     </header>
-    <main>
+    <main data-js="main">
       <article class="profile">
         <img
           class="profile__picture"
-          src="benutzer.svg"
+          src="user-black.svg"
           alt="profile-picture"
+          data-js="profile-picture"
         />
         <h2>Max Doe</h2>
+      </article>
+      <article class="text-box">
+        <h3>About me</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit
+          amet accumsan urna. Curabitur nec efficitur sem. Sed ultricies
+          tincidunt metus, vel fermentum lorem interdum a.
+        </p>
+      </article>
+      <article class="button__box">
+        <button class="button__counter">
+          <img data-js="questions-icon" src="questionicon.svg" />
+          <p class="button__text">12</p>
+        </button>
+        <button class="button__counter">
+          <img data-js="bookmark-icon" src="bookmark-button.svg" />
+          <p class="button__text">4</p>
+        </button>
+      </article>
+      <article class="text-box">
+        <a href="#settings">Settings</a>
+        <article class="settings__darkmode">
+          <p>Dark Mode</p>
+          <label class="button__switch" data-js="button__switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </article>
       </article>
     </main>
     <footer>

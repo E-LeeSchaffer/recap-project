@@ -9,6 +9,7 @@
 :root {
   --eucalyptus: #b1c5c3;
   --button-eucaplyptus: #b1c5cd;
+  --button_white: #ffffff;
   --text-black: #000000;
   --text-white: #ffffff;
   --text-dark-grey: #808080;
@@ -17,6 +18,7 @@
 
 body {
   font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -32,4 +34,17 @@ ul {
   top: 0;
   width: 100%;
   z-index: 2;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-black);
 }
