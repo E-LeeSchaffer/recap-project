@@ -21,11 +21,10 @@
   align-items: center;
   justify-content: center;
   border: 1px solid var(--text-black);
-  padding: 4px;
   width: 16vw;
   height: 36px;
   border-radius: 10px;
-  gap: 8px;
+  gap: 4px;
   background-color: var(--button-white);
 }
 
