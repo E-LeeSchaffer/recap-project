@@ -1,88 +1,52 @@
+@import "/cards.css";
+@import "/profile.css";
+@import "/footer.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --eucalyptus: #b1c5c3;
+  --button-eucaplyptus: #b1c5cd;
+  --button_white: #ffffff;
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --text-dark-grey: #808080;
+  --background-light-grey: #f1f4f5;
+}
+
 body {
   font-family: "Bebas Neue", sans-serif;
-  width: 100%;
-  margin: auto;
+  font-size: 1rem;
+  margin: 0;
 }
 
-main {
-  font-family: "Bebas Neue", sans-serif;
-  margin: auto;
+ul {
+  list-style: none;
+}
+
+.header {
+  text-align: center;
   font-size: 1.3rem;
-  width: 320px;
-  height: 667px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  background-color: #b1c5c3;
-  margin-top: 0;
-  padding: 10px;
-}
-
-.img-bookmark-white {
-  height: 40px;
-  position: absolute;
-  top: -15px;
-  right: 15px;
-  z-index: 1;
-}
-
-.img-bookmark-black {
-  height: 40px;
-  position: absolute;
-  top: -15px;
-  right: 15px;
-  z-index: 1;
-}
-
-.question-card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  text-align: center;
-  align-items: left;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  padding: 20px 30px 0px 20px;
-}
-
-.button {
-  border: 1px solid black;
-  padding: 5px;
-  width: 30vw;
-  border-radius: 10px;
-  background-color: #b1c5c3;
-  margin: auto;
-}
-
-.tags {
-  text-decoration: none;
-  font-size: 0.8rem;
-  padding: 25px 0;
-  text-align: left;
-}
-
-.tag {
-  border: 1px solid gray;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  background-color: #f1f4f5;
-  padding: 2px 4px;
-}
-
-.nav-icon {
-  height: 30px;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-around;
+  background-color: var(--eucalyptus);
   position: fixed;
-  bottom: 20px;
-  border-top: 5px solid #b1c5c3;
-  padding-block: 20px 0px;
+  top: 0;
   width: 100%;
+  z-index: 2;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-black);
 }
