@@ -1,0 +1,76 @@
+main {
+  font-family: "Bebas Neue", sans-serif;
+  padding: 120px 20px 75px 20px;
+  font-size: 1.3rem;
+}
+
+.img__bookmark {
+  height: 36px;
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  z-index: 1;
+}
+
+.button__bookmark {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.button__bookmark.active {
+  background-color: red;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  gap: 24px;
+}
+
+.card__box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid var(--text-black);
+  border-radius: 10px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 24px;
+  align-items: center;
+  text-align: center;
+}
+
+.button {
+  border: 1px solid var(--text-black);
+  padding: 5px;
+  width: 24vw;
+  border-radius: 10px;
+  background-color: var(--button-eucaplyptus);
+}
+
+.card__tags {
+  font-size: 0.8rem;
+  gap: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.tag {
+  border: 1px solid var(--text-dark-grey);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--text-black);
+  background-color: var(--background-light-grey);
+  padding: 2px 4px;
+}

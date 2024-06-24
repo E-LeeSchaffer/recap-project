@@ -1,11 +1,26 @@
+@import "/cards.css";
+@import "/profile.css";
+@import "/footer.css";
+
 *,
-::after,
-::before {
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+:root {
+  --eucalyptus: #b1c5c3;
+  --button-eucaplyptus: #b1c5cd;
+  --button_white: #ffffff;
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --text-dark-grey: #808080;
+  --background-light-grey: #f1f4f5;
 }
 
 body {
   font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -13,106 +28,25 @@ ul {
   list-style: none;
 }
 
-main {
-  font-family: "Bebas Neue", sans-serif;
-  padding-inline: 20px;
-  padding-bottom: 50px;
-  font-size: 1.3rem;
-  height: 100vh;
-  padding-top: 120px;
-}
-
-header {
+.header {
   text-align: center;
   font-size: 1.3rem;
-  background-color: #b1c5c3;
+  background-color: var(--eucalyptus);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
 }
 
-.img__bookmark {
-  height: 36px;
-  position: absolute;
-  top: -15px;
-  right: 15px;
-  z-index: 1;
+h3 {
+  font-size: 1.2rem;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  padding-inline: 20px;
-  gap: 24px;
+p {
+  font-size: 1rem;
 }
 
-.card__box {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.card__content {
-  display: flex;
-  flex-direction: column;
-  padding: 8px 24px;
-  align-items: center;
-  text-align: center;
-}
-
-.button {
-  border: 1px solid black;
-  padding: 5px;
-  width: 24vw;
-  border-radius: 10px;
-  background-color: #b1c5c3;
-}
-
-.card__tags {
-  font-size: 0.8rem;
-  gap: 4px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  text-align: left;
-  margin: 0;
-  padding: 20px 0;
-}
-
-.tag {
-  border: 1px solid gray;
-  border-radius: 5px;
+a {
   text-decoration: none;
-  color: black;
-  background-color: #f1f4f5;
-  padding: 2px 4px;
-}
-
-.nav-icon {
-  height: 30px;
-}
-
-.nav-active {
-  filter: brightness(1) invert(1);
-}
-
-.navigation {
-  padding-block: 40px 12px;
-  position: fixed;
-  bottom: -12px;
-  width: 100%;
-  z-index: 2;
-}
-
-.navigation__list {
-  display: flex;
-  justify-content: space-around;
-  background-color: #b1c5c3;
-  width: 100%;
-  margin: 0;
-  padding: 12px;
+  color: var(--text-black);
 }
