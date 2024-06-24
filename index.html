@@ -11,21 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <script src="./profile.js" defer></script>
   </head>
     <header class="header">
       <h1>Quiz App</h1>
     </header>
-    <main>
+    <main data-js="main">
       <ul class="card" role="list">
         <li class="card__box">
           <article class="card__content">
             <img
-              class="img__bookmark"
+              class="img__bookmark" data-js="add-bookmark"
               src="bookmark-white.svg"
               alt="bookmark"
             />
             <p>What property flips the axes in flexbox?</p>
-            <button class="button">Show Answer</button>
+            <button class="button" data-js="button">Show Answer</button>
+            <p data-js="answer" hidden>Here is the answer 1</p>
             <ul class="card__tags" role="list">
               <li class="tag">#html</li>
               <li class="tag">#flexbox</li>
@@ -41,7 +43,8 @@
               alt="bookmark"
             />
             <p>What property flips the axes in flexbox?</p>
-            <button class="button">Show Answer</button>
+            <button class="button" data-js="button">Show Answer</button>
+            <p data-js="answer" hidden>Here is the answer 2</p>
             <ul class="card__tags" role="list">
                 <li class="tag">#html</li>
                 <li class="tag">#flexbox</li>
@@ -51,13 +54,13 @@
         </li>
         <li class="card__box">
             <article class="card__content">
-              <img
-                class="img__bookmark"
-                src="bookmark-white.svg"
-                alt="bookmark"
+              <button class="button__bookmark">
+                <img data-js="bookmark-image" class="img__bookmark" src="bookmark-white.svg" alt="bookmark"
               />
+              </button>
               <p>What property flips the axes in flexbox?</p>
-              <button class="button">Show Answer</button>
+              <button class="button" data-js="button">Show Answer</button>
+              <p data-js="answer" hidden>Here is the answer 3</p>
               <ul class="card__tags" role="list">
                   <li class="tag">#html</li>
                   <li class="tag">#flexbox</li>

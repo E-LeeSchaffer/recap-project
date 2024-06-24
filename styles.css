@@ -2,7 +2,9 @@
 @import "/profile.css";
 @import "/footer.css";
 
-*, : : after, : : before {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
