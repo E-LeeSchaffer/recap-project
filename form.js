@@ -1,5 +1,5 @@
 const form = document.querySelector('[data-js="form"]');
-const cardsContainer = document.getElementById("cards-container");
+const cardsContainer = document.querySelector('[data-js="cardsContainer"]');
 // console.log("submit:", "it works");
 
 form.addEventListener("submit", (event) => {
@@ -25,17 +25,22 @@ form.addEventListener("submit", (event) => {
 
   const answerParameter = document.createElement("p");
   answerParameter.textContent = data.answer;
-  answerParameter.hidden = true;
+  answerParameter.classList.add("answer-hide");
+  //   answerParameter.hidden = true;
 
   const tagParameter = document.createElement("p");
-  tagParameter.textContent = data.tag;
+  tagParameter.textContent = `# ${data.tag}`;
+  tagParameter.classList.add("tag");
 
   //Button zum Anzeigen der Antwort
   const showAnswerButton = document.createElement("button");
   showAnswerButton.textContent = "Show Answer";
+  showAnswerButton.classList.add("button");
   showAnswerButton.addEventListener("click", () => {
-    answerParameter.hidden = !answerParameter.hidden;
-    showAnswerButton.textContent = answerParameter.hidden
+    answerParameter.classList.toggle("answer-show");
+    showAnswerButton.textContent = answerParameter.classList.contains(
+      "answer-show"
+    )
       ? "Show Answer"
       : "Hide Answer";
   });

@@ -1,16 +1,8 @@
-.form {
-  padding: 20px 36px;
-}
-
-.fieldset {
-  padding: 28px 28px;
-}
-
-.form-structure {
+.formcard__content {
   display: flex;
   flex-direction: column;
-  margin-bottom: 28px;
-  width: 100%;
+  padding: 8px 24px;
+  align-items: flex-start;
 }
 
 .submit-button {
@@ -19,6 +11,7 @@
   padding-block: 4px;
   margin-top: 24px;
   border-radius: 12px;
+  width: fit-content;
 }
 
 .counts {
