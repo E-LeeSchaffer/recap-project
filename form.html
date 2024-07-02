@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./form.js" defer></script>
+  </head>
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+    <main data-js="main">
+    <form class="form" data-js="form">
+        <fieldset class="fieldset">
+            <article class="form-structure">
+                <label for="yourQuestion">Your question:</label>
+                <textarea class="input-field" id="yourQuestion" type="text" name="question" rows="4" maxlength="150" required></textarea>
+                <span class="counts" id="questionCount">150 characters left</span>
+            </article>
+            <article class="form-structure">
+                <label for="yourAnswer">Your answer:</label>
+                <textarea class="input-field" id="yourAnswer" type="text" name="answer" rows="4" maxlength="150" required></textarea>
+                <span class="counts" id="answerCount">150 characters left</span>
+            </article class="form-structure">
+                <label for="tag">Tag:</label>
+        </br><input class="input-field" id="tag" type="text" name="tag" required>
+    <button class="submit-button" type="submit" data-js="submit-button">
+                Submit
+            </button>
+        </fieldset>
+    </form>
+    <div id="cards-container"> </div> <!-- zu cards verlinken -->
+    </main>
+    <footer>
+      <nav class="navigation">
+        <ul class="navigation__list" role="list">
+          <li>
+            <a href="index.html"
+              ><img class="nav-icon nav-active" src="home-white.svg" alt="home"
+            /></a>
+          </li>
+          <li>
+            <a href="bookmarks.html"
+              ><img class="nav-icon" src="bookmark-white.svg" alt="bookmark"
+            /></a>
+          </li>
+          <li>
+            <a href="form.html"
+              ><img class="nav-icon" src="form-black.svg" alt="bookmark"
+            /></a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <img class="nav-icon" src="user-white.svg" alt="user"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -20,7 +20,7 @@ main {
 }
 
 .button__bookmark.active {
-  background-color: red;
+  background-color: black;
 }
 
 .card {
