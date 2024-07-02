@@ -20,31 +20,31 @@ form.addEventListener("submit", (event) => {
   const article = document.createElement("article");
   article.classList.add("card__content");
 
-  const questionPara = document.createElement("p");
-  questionPara.textContent = data.question;
+  const questionParameter = document.createElement("p");
+  questionParameter.textContent = data.question;
 
-  const answerPara = document.createElement("p");
-  answerPara.textContent = data.answer;
-  answerPara.hidden = true;
+  const answerParameter = document.createElement("p");
+  answerParameter.textContent = data.answer;
+  answerParameter.hidden = true;
 
-  const tagPara = document.createElement("p");
-  tagPara.textContent = data.tag;
+  const tagParameter = document.createElement("p");
+  tagParameter.textContent = data.tag;
 
   //Button zum Anzeigen der Antwort
   const showAnswerButton = document.createElement("button");
   showAnswerButton.textContent = "Show Answer";
   showAnswerButton.addEventListener("click", () => {
-    answerPara.hidden = !answerPara.hidden;
-    showAnswerButton.textContent = answerPara.hidden
+    answerParameter.hidden = !answerParameter.hidden;
+    showAnswerButton.textContent = answerParameter.hidden
       ? "Show Answer"
       : "Hide Answer";
   });
 
   //   Elemente in die DOM einfügen
-  article.appendChild(questionPara);
+  article.appendChild(questionParameter);
   article.appendChild(showAnswerButton);
-  article.appendChild(answerPara);
-  article.appendChild(tagPara);
+  article.appendChild(answerParameter);
+  article.appendChild(tagParameter);
   card.appendChild(article);
   cardsContainer.insertBefore(card, cardsContainer.firstChild);
 });
