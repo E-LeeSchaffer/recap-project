@@ -3,25 +3,6 @@ const checkbox = document.querySelector('[data-js="button__switch"] input');
 const questionIcon = document.querySelector('[data-js="questions-icon"]');
 const bookmarkIcon = document.querySelector('[data-js="bookmark-icon"]');
 const profilePicture = document.querySelector('[data-js="profile-picture"]');
-const button = document.querySelector('[data-js="button"]');
-const buttons = document.querySelectorAll('[data-js="button"]');
-const answer = document.querySelector('[data-js="answer"]');
-
-// show answer for button
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const answer = button.nextElementSibling;
-    if (button.classList.contains("clicked")) {
-      button.classList.remove("clicked");
-      answer.style.display = "none";
-      console.log("answer hidden");
-    } else {
-      button.classList.add("clicked");
-      answer.style.display = "block";
-      console.log("answer shown");
-    }
-  });
-});
 
 // change main (Text w/o images) into darkmode
 checkbox.addEventListener("change", () => {
@@ -57,4 +38,30 @@ checkbox.addEventListener("change", () => {
   } else {
     bookmarkIcon.src = "bookmark-button.svg";
   }
+});
+
+// Counter question Button
+const questionCounterButton = document.querySelector(
+  '[data-js="question-counter"]'
+);
+const questionCounterText =
+  questionCounterButton.querySelector(".button__text");
+
+questionCounterButton.addEventListener("click", () => {
+  let count = parseInt(questionCounterText.textContent, 10);
+  count += 1;
+  questionCounterText.textContent = count;
+});
+
+// Counter bookmark Button
+const bookmarkCounterButton = document.querySelector(
+  '[data-js="bookmark-counter"]'
+);
+const bookmarkCounterText =
+  bookmarkCounterButton.querySelector(".button__text");
+
+bookmarkCounterButton.addEventListener("click", () => {
+  let count = parseInt(bookmarkCounterText.textContent, 10);
+  count += 1;
+  bookmarkCounterText.textContent = count;
 });

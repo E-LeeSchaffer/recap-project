@@ -11,8 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <script src="./profile.js" defer></script>
+    <script src="./index.js" defer></script>
   </head>
+  <body>
     <header class="header">
       <h1>Quiz App</h1>
     </header>
@@ -20,11 +21,14 @@
       <ul class="card" role="list">
         <li class="card__box">
           <article class="card__content">
-            <img
-              class="img__bookmark" data-js="add-bookmark"
-              src="bookmark-white.svg"
-              alt="bookmark"
-            />
+            <button class="button__bookmark" data-js="bookmark-button">
+              <img
+                class="img__bookmark"
+                data-js="add-bookmark"
+                src="bookmark-white.svg"
+                alt="bookmark"
+              />
+            </button>
             <p>What property flips the axes in flexbox?</p>
             <button class="button" data-js="button">Show Answer</button>
             <p data-js="answer" hidden>Here is the answer 1</p>
@@ -37,37 +41,44 @@
         </li>
         <li class="card__box">
           <article class="card__content">
-            <img
-              class="img__bookmark"
-              src="bookmark-black.jpg"
-              alt="bookmark"
-            />
+            <button class="button__bookmark" data-js="bookmark-button">
+              <img
+                class="img__bookmark"
+                data-js="add-bookmark"
+                src="bookmark-white.svg"
+                alt="bookmark"
+              />
+            </button>
             <p>What property flips the axes in flexbox?</p>
             <button class="button" data-js="button">Show Answer</button>
             <p data-js="answer" hidden>Here is the answer 2</p>
             <ul class="card__tags" role="list">
-                <li class="tag">#html</li>
-                <li class="tag">#flexbox</li>
-                <li class="tag">#css</li>
-              </ul>
+              <li class="tag">#html</li>
+              <li class="tag">#flexbox</li>
+              <li class="tag">#css</li>
+            </ul>
           </article>
         </li>
         <li class="card__box">
-            <article class="card__content">
-              <button class="button__bookmark">
-                <img data-js="bookmark-image" class="img__bookmark" src="bookmark-white.svg" alt="bookmark"
+          <article class="card__content">
+            <button class="button__bookmark" data-js="bookmark-button">
+              <img
+                data-js="add-bookmark"
+                class="img__bookmark"
+                src="bookmark-white.svg"
+                alt="bookmark"
               />
-              </button>
-              <p>What property flips the axes in flexbox?</p>
-              <button class="button" data-js="button">Show Answer</button>
-              <p data-js="answer" hidden>Here is the answer 3</p>
-              <ul class="card__tags" role="list">
-                  <li class="tag">#html</li>
-                  <li class="tag">#flexbox</li>
-                  <li class="tag">#css</li>
-                </ul>
-            </article>
-          </li>
+            </button>
+            <p>What property flips the axes in flexbox?</p>
+            <button class="button" data-js="button">Show Answer</button>
+            <p data-js="answer" hidden>Here is the answer 3</p>
+            <ul class="card__tags" role="list">
+              <li class="tag">#html</li>
+              <li class="tag">#flexbox</li>
+              <li class="tag">#css</li>
+            </ul>
+          </article>
+        </li>
       </ul>
     </main>
     <footer>
@@ -75,17 +86,22 @@
         <ul class="navigation__list" role="list">
           <li>
             <a href="index.html"
-              ><img class="nav-icon nav-active" src="home.svg" alt="home"
+              ><img class="nav-icon nav-active" src="home-black.svg" alt="home"
             /></a>
           </li>
           <li>
             <a href="bookmarks.html"
-              ><img class="nav-icon" src="bookmark.svg" alt="bookmark"
+              ><img class="nav-icon" src="bookmark-white.svg" alt="bookmark"
+            /></a>
+          </li>
+          <li>
+            <a href="form.html"
+              ><img class="nav-icon" src="form-white.svg" alt="bookmark"
             /></a>
           </li>
           <li>
             <a href="profile.html">
-              <img class="nav-icon" src="benutzer.svg" alt="user"
+              <img class="nav-icon" src="user-white.svg" alt="user"
             /></a>
           </li>
         </ul>
