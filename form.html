@@ -17,26 +17,28 @@
       <h1>Quiz App</h1>
     </header>
     <main data-js="main">
-    <form class="form" data-js="form">
-        <fieldset class="fieldset">
-            <article class="form-structure">
+    <form class="card" data-js="form">
+        <fieldset class="card__box">
+            <article class="formcard__content">
                 <label for="yourQuestion">Your question:</label>
                 <textarea class="input-field" id="yourQuestion" type="text" name="question" rows="4" maxlength="150" required></textarea>
                 <span class="counts" id="questionCount">150 characters left</span>
             </article>
-            <article class="form-structure">
+            <article class="formcard__content">
                 <label for="yourAnswer">Your answer:</label>
                 <textarea class="input-field" id="yourAnswer" type="text" name="answer" rows="4" maxlength="150" required></textarea>
                 <span class="counts" id="answerCount">150 characters left</span>
-            </article class="form-structure">
+            </article>
+            <article class="formcard__content">
                 <label for="tag">Tag:</label>
         </br><input class="input-field" id="tag" type="text" name="tag" required>
+    </article>
     <button class="submit-button" type="submit" data-js="submit-button">
                 Submit
             </button>
         </fieldset>
     </form>
-    <div id="cards-container"> </div> <!-- zu cards verlinken -->
+    <div data-js="cardsContainer"> </div> <!-- test comment -->
     </main>
     <footer>
       <nav class="navigation">

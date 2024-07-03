@@ -1,5 +1,5 @@
 const form = document.querySelector('[data-js="form"]');
-const cardsContainer = document.getElementById("cards-container");
+const cardsContainer = document.querySelector('[data-js="cardsContainer"]');
 // console.log("submit:", "it works");
 
 form.addEventListener("submit", (event) => {
@@ -20,31 +20,36 @@ form.addEventListener("submit", (event) => {
   const article = document.createElement("article");
   article.classList.add("card__content");
 
-  const questionPara = document.createElement("p");
-  questionPara.textContent = data.question;
+  const questionParameter = document.createElement("p");
+  questionParameter.textContent = data.question;
 
-  const answerPara = document.createElement("p");
-  answerPara.textContent = data.answer;
-  answerPara.hidden = true;
+  const answerParameter = document.createElement("p");
+  answerParameter.textContent = data.answer;
+  answerParameter.classList.add("answer-hide");
+  //   answerParameter.hidden = true;
 
-  const tagPara = document.createElement("p");
-  tagPara.textContent = data.tag;
+  const tagParameter = document.createElement("p");
+  tagParameter.textContent = `# ${data.tag}`;
+  tagParameter.classList.add("tag");
 
   //Button zum Anzeigen der Antwort
   const showAnswerButton = document.createElement("button");
   showAnswerButton.textContent = "Show Answer";
+  showAnswerButton.classList.add("button");
   showAnswerButton.addEventListener("click", () => {
-    answerPara.hidden = !answerPara.hidden;
-    showAnswerButton.textContent = answerPara.hidden
+    answerParameter.classList.toggle("answer-show");
+    showAnswerButton.textContent = answerParameter.classList.contains(
+      "answer-show"
+    )
       ? "Show Answer"
       : "Hide Answer";
   });
 
   //   Elemente in die DOM einfügen
-  article.appendChild(questionPara);
+  article.appendChild(questionParameter);
   article.appendChild(showAnswerButton);
-  article.appendChild(answerPara);
-  article.appendChild(tagPara);
+  article.appendChild(answerParameter);
+  article.appendChild(tagParameter);
   card.appendChild(article);
   cardsContainer.insertBefore(card, cardsContainer.firstChild);
 });
