@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <script src="./profile.js" defer></script>
+    <script src="../js/profile.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -21,7 +21,7 @@
       <article class="profile">
         <img
           class="profile__picture"
-          src="profile-picture.svg"
+          src="../assets/profile-picture.svg"
           alt="profile-picture"
           data-js="profile-picture"
         />
@@ -37,11 +37,11 @@
       </article>
       <article class="button__box">
         <button class="button__counter" data-js="question-counter">
-          <img data-js="questions-icon" src="questionicon.svg" />
+          <img data-js="questions-icon" src="../assets/questionicon.svg" />
           <p class="button__text">0</p>
         </button>
         <button class="button__counter" data-js="bookmark-counter">
-          <img data-js="bookmark-icon" src="bookmark-black.svg" />
+          <img data-js="bookmark-icon" src="../assets/bookmark-black.svg" />
           <p class="button__text">0</p>
         </button>
       </article>
@@ -60,23 +60,32 @@
       <nav class="navigation">
         <ul class="navigation__list" role="list">
           <li>
-            <a href="index.html"
-              ><img class="nav-icon nav-active" src="home-white.svg" alt="home"
+            <a href=".//index.html"
+              ><img
+                class="nav-icon nav-active"
+                src="../assets/home-white.svg"
+                alt="home"
             /></a>
           </li>
           <li>
-            <a href="bookmarks.html"
-              ><img class="nav-icon" src="bookmark-white.svg" alt="bookmark"
+            <a href=".//bookmarks.html"
+              ><img
+                class="nav-icon"
+                src="../assets/bookmark-white.svg"
+                alt="bookmark"
             /></a>
           </li>
           <li>
-            <a href="form.html"
-              ><img class="nav-icon" src="form-white.svg" alt="bookmark"
+            <a href=".//form.html"
+              ><img
+                class="nav-icon"
+                src="../assets/form-white.svg"
+                alt="bookmark"
             /></a>
           </li>
           <li>
-            <a href="profile.html">
-              <img class="nav-icon" src="user-black.svg" alt="user"
+            <a href=".//profile.html">
+              <img class="nav-icon" src="../assets/user-black.svg" alt="user"
             /></a>
           </li>
         </ul>

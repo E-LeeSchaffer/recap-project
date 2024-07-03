@@ -1,7 +1,7 @@
-@import "/cards.css";
-@import "/profile.css";
-@import "/footer.css";
-@import "/form.css";
+@import "./cards.css";
+@import "./profile.css";
+@import "./footer.css";
+@import "./form.css";
 
 *,
 *::before,
